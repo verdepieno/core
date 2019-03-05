@@ -133,8 +133,8 @@ $_fax = $block->getLayout()->createBlock('Magento\Customer\Block\Widget\Fax');
 
 		<?php
 			$a = $block->getAddress(); /** @var A $a */
-			echo F::f($a, D::F__CODICE_SDI, D::T__CODICE_SDI);
-			echo F::f($a, D::F__PEC, D::T__PEC);
+			echo F::f(D::F__CODICE_SDI, D::T__CODICE_SDI, $a);
+			echo F::f(D::F__PEC, D::T__PEC, $a);
 		?>
 
 		<?php if ($block->isDefaultBilling()): ?>
