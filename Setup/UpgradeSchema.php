@@ -17,19 +17,6 @@ class UpgradeSchema extends \Df\Framework\Upgrade\Schema {
 	}
 
 	/**
-	 * 2016-08-22
-	 * Помимо добавления поля в таблицу «customer_entity» надо ещё добавить атрибут
-	 * что мы делаем методом @see \Df\Sso\Upgrade\Data::attribute()
-	 * иначе данные не будут сохраняться: https://github.com/magento/magento2/blob/2.1.0/app/code/Magento/Eav/Model/Entity/AbstractEntity.php#L1262-L1265
-	 * @used-by _process()
-	 * @param string $name
-	 * @param string $definition
-	 */
-	final protected function columnCAE($name, $definition) {$this->column(
-		'customer_address_entity', $name, $definition
-	);}
-
-	/**
 	 * 2019-03-05
 	 * @used-by _process()
 	 */
