@@ -11,20 +11,8 @@ class UpgradeSchema extends \Df\Framework\Upgrade\Schema {
 	 */
 	final protected function _process() {
 		if ($this->isInitial()) {
-			$this->columnCAE(self::F__CODICE_SDI, 'varchar(255) DEFAULT NULL');
-			$this->columnCAE(self::F__PEC, 'varchar(255) DEFAULT NULL');
+			$this->columnCAE(UpgradeData::F__CODICE_SDI, 'varchar(255) DEFAULT NULL');
+			$this->columnCAE(UpgradeData::F__PEC, 'varchar(255) DEFAULT NULL');
 		}
 	}
-
-	/**
-	 * 2019-03-05
-	 * @used-by _process()
-	 */
-	const F__CODICE_SDI = 'verdepieno__codice_sdi';
-
-	/**
-	 * 2019-03-05
-	 * @used-by _process()
-	 */
-	const F__PEC = 'verdepieno__pec';
 }

@@ -23,8 +23,34 @@ class UpgradeData extends \Df\Framework\Upgrade\Data {
 	 */
 	protected function _process() {
 		if ($this->isInitial()) {
-			$this->attributeCA(UpgradeSchema::F__CODICE_SDI, 'Codice SDI');
-			$this->attributeCA(UpgradeSchema::F__PEC, 'PEC');
+			$this->attributeCA(self::F__CODICE_SDI, self::T__CODICE_SDI);
+			$this->attributeCA(self::F__PEC, self::T__PEC);
 		}
 	}
+
+	/**
+	 * 2019-03-05
+	 * @used-by _process()
+	 * @used-by \Verdepieno\Core\Setup\UpgradeSchema::_process()
+	 */
+	const F__CODICE_SDI = 'verdepieno__codice_sdi';
+
+	/**
+	 * 2019-03-05
+	 * @used-by _process()
+	 * @used-by \Verdepieno\Core\Setup\UpgradeSchema::_process()
+	 */
+	const F__PEC = 'verdepieno__pec';
+
+	/**
+	 * 2019-03-06
+	 * @used-by _process()
+	 */
+	const T__CODICE_SDI = 'Codice SDI';
+
+	/**
+	 * 2019-03-06
+	 * @used-by _process()
+	 */
+	const T__PEC = 'PEC';
 }
