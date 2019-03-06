@@ -33,14 +33,14 @@ class UpgradeData extends \Df\Framework\Upgrade\Data {
 	 * @used-by _process()
 	 * @used-by \Verdepieno\Core\Setup\UpgradeSchema::_process()
 	 */
-	const F__CODICE_SDI = 'verdepieno__codice_sdi';
+	const F__CODICE_SDI = 'verdepieno_codice_sdi';
 
 	/**
 	 * 2019-03-05
 	 * @used-by _process()
 	 * @used-by \Verdepieno\Core\Setup\UpgradeSchema::_process()
 	 */
-	const F__PEC = 'verdepieno__pec';
+	const F__PEC = 'verdepieno_pec';
 
 	/**
 	 * 2019-03-06

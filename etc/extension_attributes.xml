@@ -4,11 +4,15 @@
 	xsi:noNamespaceSchemaLocation='urn:magento:framework:Api/etc/extension_attributes.xsd'
 >
 	<extension_attributes for='Magento\Customer\Api\Data\AddressInterface'>
-		<attribute code='verdepieno__codice_sdi' type='string'/>
-		<attribute code='verdepieno__pec' type='string'/>
+		<attribute code='verdepieno_codice_sdi' type='string'/>
+		<attribute code='verdepieno_pec' type='string'/>
 	</extension_attributes>
 	<extension_attributes for='Magento\Quote\Api\Data\AddressInterface'>
-		<attribute code='verdepieno__codice_sdi' type='string'/>
-		<attribute code='verdepieno__pec' type='string'/>
+		<attribute code='verdepieno_codice_sdi' type='string'/>
+		<attribute code='verdepieno_pec' type='string'/>
+	</extension_attributes>
+	<extension_attributes for='Magento\Sales\Api\Data\OrderAddressInterface'>
+		<attribute code='verdepieno_codice_sdi' type='string'/>
+		<attribute code='verdepieno_pec' type='string'/>
 	</extension_attributes>
 </config>
