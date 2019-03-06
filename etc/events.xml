@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<config
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd"
+>
+<!-- 2019-03-06
+«copy custom attribute from quote_address to sales_order_address not working»
+https://magento.stackexchange.com/a/263897 -->
+	<event name='sales_model_service_quote_submit_before'>
+		<observer
+			instance='Verdepieno\Core\Observer\QuoteSubmitBefore'
+			name='Verdepieno\Core\Observer\QuoteSubmitBefore'
+		/>
+	</event>
+</config>

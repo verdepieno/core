@@ -1,9 +1,5 @@
 <?php
 namespace Verdepieno\Core\Setup;
-use Magento\Customer\Api\AddressMetadataInterface as M;
-use Magento\Eav\Api\Data\AttributeGroupInterface as G;
-use Magento\Eav\Model\Entity\Attribute\AbstractAttribute as A;
-use Magento\Eav\Model\Entity\Attribute\Set as _AS;
 /**
  * 2019-03-05
  * 1) «Add 2 fields to the checkout and customer registration pages»
@@ -31,6 +27,7 @@ class UpgradeData extends \Df\Framework\Upgrade\Data {
 	/**
 	 * 2019-03-05
 	 * @used-by _process()
+	 * @used-by \Verdepieno\Core\Observer\QuoteSubmitBefore::p()
 	 * @used-by \Verdepieno\Core\Setup\UpgradeSchema::_process()
 	 */
 	const F__CODICE_SDI = 'verdepieno_codice_sdi';
@@ -38,6 +35,7 @@ class UpgradeData extends \Df\Framework\Upgrade\Data {
 	/**
 	 * 2019-03-05
 	 * @used-by _process()
+	 * @used-by \Verdepieno\Core\Observer\QuoteSubmitBefore::p()
 	 * @used-by \Verdepieno\Core\Setup\UpgradeSchema::_process()
 	 */
 	const F__PEC = 'verdepieno_pec';
