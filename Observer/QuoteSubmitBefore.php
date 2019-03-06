@@ -22,7 +22,7 @@ final class QuoteSubmitBefore implements ObserverInterface {
 	function execute(Ob $ob) {
 		$o = $ob['order']; /** @var O $o */
 		$q = $ob['quote']; /** @var Q $q */
-		$this->p($q->getShippingAddress(), $o->getShippingAddress());
+		//$this->p($q->getShippingAddress(), $o->getShippingAddress());
 		$this->p($q->getBillingAddress(), $o->getBillingAddress());
 	}
 

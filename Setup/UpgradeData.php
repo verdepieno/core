@@ -28,6 +28,7 @@ class UpgradeData extends \Df\Framework\Upgrade\Data {
 	 * 2019-03-05
 	 * @used-by _process()
 	 * @used-by \Verdepieno\Core\Observer\QuoteSubmitBefore::p()
+	 * @used-by \Verdepieno\Core\Plugin\Quote\Model\Quote\Address\Address::afterGetAttributes()
 	 * @used-by \Verdepieno\Core\Setup\UpgradeSchema::_process()
 	 */
 	const F__CODICE_SDI = 'verdepieno_codice_sdi';
@@ -36,6 +37,7 @@ class UpgradeData extends \Df\Framework\Upgrade\Data {
 	 * 2019-03-05
 	 * @used-by _process()
 	 * @used-by \Verdepieno\Core\Observer\QuoteSubmitBefore::p()
+	 * @used-by \Verdepieno\Core\Plugin\Quote\Model\Quote\Address\Address::afterGetAttributes()
 	 * @used-by \Verdepieno\Core\Setup\UpgradeSchema::_process()
 	 */
 	const F__PEC = 'verdepieno_pec';
