@@ -27,7 +27,7 @@
 		<item name='id' xsi:type='string'>verdepieno_codice_sdi</item>
 	</item>
 	<item name='provider' xsi:type='string'>checkoutProvider</item>
-	<item name='dataScope' xsi:type='string'>shippingAddress.verdepieno_codice_sdi</item>
+	<item name='dataScope' xsi:type='string'>shippingAddress.custom_attributes.verdepieno_codice_sdi</item>
 	<item name='label' xsi:type='string'>Codice SDI 2</item>
 	<item name='sortOrder' xsi:type='string'>252</item>
 	<item name='id' xsi:type='string'>verdepieno_codice_sdi</item>
@@ -45,7 +45,7 @@
 		<item name='id' xsi:type='string'>verdepieno_pec</item>
 	</item>
 	<item name='provider' xsi:type='string'>checkoutProvider</item>
-	<item name='dataScope' xsi:type='string'>shippingAddress.verdepieno_pec</item>
+	<item name='dataScope' xsi:type='string'>shippingAddress.custom_attributes.verdepieno_pec</item>
 	<item name='label' xsi:type='string'>PEC 2</item>
 	<item name='sortOrder' xsi:type='string'>253</item>
 	<item name='id' xsi:type='string'>verdepieno_pec</item>
