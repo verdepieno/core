@@ -3,6 +3,15 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd"
 >
+<!-- 2019-03-09
+"If a customer's VAT field is empty, then fill it from his default address":
+https://github.com/verdepieno/core/issues/2 -->
+	<type name='Magento\Customer\Model\Customer'>
+		<plugin
+			name='Verdepieno\Core\Plugin\Customer\Model\Customer'
+			type='Verdepieno\Core\Plugin\Customer\Model\Customer'
+		/>
+	</type>
 <!-- 2019-03-06 -->
 	<type name='Magento\Quote\Model\Quote\Address\CustomAttributeListInterface'>
 		<plugin
