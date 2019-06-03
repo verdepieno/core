@@ -1,5 +1,6 @@
 <?php
 namespace Verdepieno\Core\Setup;
+use Df\Customer\AddAttribute\Address as AddAttribute;
 /**
  * 2019-03-05
  * 1) «Add 2 fields to the checkout and customer registration pages»
@@ -19,8 +20,8 @@ class UpgradeData extends \Df\Framework\Upgrade\Data {
 	 */
 	protected function _process() {
 		if ($this->isInitial()) {
-			$this->attributeCA(self::F__CODICE_SDI, self::T__CODICE_SDI);
-			$this->attributeCA(self::F__PEC, self::T__PEC);
+			AddAttribute::p(self::F__CODICE_SDI, self::T__CODICE_SDI);
+			AddAttribute::p(self::F__PEC, self::T__PEC);
 		}
 	}
 
