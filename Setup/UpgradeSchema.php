@@ -11,14 +11,14 @@ class UpgradeSchema extends \Df\Framework\Upgrade\Schema {
 	 */
 	final protected function _process() {
 		if ($this->isInitial()) {
-			$this->columnCAE(UpgradeData::F__CODICE_SDI, 'varchar(255) DEFAULT NULL');
-			$this->columnCAE(UpgradeData::F__PEC, 'varchar(255) DEFAULT NULL');
+			$this->columnCAE(UpgradeData::F__CODICE_SDI);
+			$this->columnCAE(UpgradeData::F__PEC);
 		}
 		if ($this->v('0.0.2')) {
-			$this->column('quote_address', UpgradeData::F__CODICE_SDI, 'varchar(255) DEFAULT NULL');
-			$this->column('sales_order_address', UpgradeData::F__CODICE_SDI, 'varchar(255) DEFAULT NULL');
-			$this->column('quote_address', UpgradeData::F__PEC, 'varchar(255) DEFAULT NULL');
-			$this->column('sales_order_address', UpgradeData::F__PEC, 'varchar(255) DEFAULT NULL');
+			$this->column('quote_address', UpgradeData::F__CODICE_SDI);
+			$this->column('sales_order_address', UpgradeData::F__CODICE_SDI);
+			$this->column('quote_address', UpgradeData::F__PEC);
+			$this->column('sales_order_address', UpgradeData::F__PEC);
 		}
 	}
 }
